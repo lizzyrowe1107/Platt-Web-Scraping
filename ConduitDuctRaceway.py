@@ -45,9 +45,16 @@ for page in range(1,10):
         #fill dictionary
         d["Description"] = allItems[i].text.strip()
 
-        #add if statement
-        d["Price"] = allPrices[i].text.strip()
-        d["Unit"] = allUnits[i].text.strip()
+        #add try and except
+        try:
+            d["Price"] = allPrices[i].text.strip()
+        except:
+            d["Price"] = None
+
+        try:
+            d["Unit"] = allUnits[i].text.strip()
+        except:
+            d["Unit"] = None
 
         #append dictionary to list
         dataList.append(d)
