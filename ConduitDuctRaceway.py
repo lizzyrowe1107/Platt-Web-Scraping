@@ -69,7 +69,7 @@ print(df.head())
 print(df.describe())
 
 #make into csv
-df.to_csv("ConduitDuctRaceway.csv")
+df.to_csv("Strut.csv")
 
 
 
