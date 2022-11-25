@@ -7,12 +7,12 @@ import pandas
 dataList=[]
 
 #loop through pages - does NOT include last number
-for page in range(1,10):
+for page in range(1,13):
 
     #request
     showCount = str(64)
     stringPage = str(page)
-    baseUrl = f'https://www.platt.com/s/electrical-conduit-wire-duct-electrical-raceway?cat=r1imf5&show={showCount}&page={stringPage}'
+    baseUrl = f'https://www.platt.com/s/electrical-strut-channel?cat=q2i5f11&show={showCount}&page={stringPage}'
     r = requests.get(baseUrl)
     c = r.content
     
